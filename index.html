@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<hmtl lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Cadastro de Alunos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <header>
+        <div class="logo">
+            <img src="apple-touch-icon (1).png"  alt="Logo da Instituição">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="page.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="tabela.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <h1>Cadastro de Alunos</h1>
+            <form id="alunoForm">
+                <!--placeholder: texto dentro da caixinha -->
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="number" id="idade" placeholder="Idade" min="18" required>
+                <input type="text" id="curso" placeholder="Curso Desejado" required>
+                <input type="email" id="emails" placeholder="Emails (separados por vírgula)" required>
+                <!--Botão-->
+                <button type="submit">Cadastrar Aluno</button>
+            </form>
+            <div id="alunosList"></div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</hmtl>
